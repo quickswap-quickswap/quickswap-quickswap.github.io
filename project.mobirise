@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "Site 2024-01-23 15:15",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.8",
+    "siteFonts": [],
+    "imageResize": true,
+    "usedWebp": true,
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://quickswap-quickswap.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://quickswap-quickswap.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "favicon": false,
+    "mbrsiteDomain": "l4l1mcxs1r",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.8"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Quickswap™ | Home Official Site",
+        "meta_descr": "WebQuickswap - Leading DEX on Polygon. QuickSwap is a next-gen #DEX for #DeFi. Trade at lightning-fast speeds with near-zero gas fees.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://quickswap-exchange.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/quickswap.png\" alt=\"Quickswap\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "u2b5ddKiDY",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b><a href=\"https://quickswap.exchange/#/\" class=\"text-primary\">Quickswap</a>™ | Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            \n            \n            \n            <div class=\"item features-without-image col-12 active\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Web <a href=\"https://quickswap-quickswap.github.io/\" class=\"text-primary\">Quickswap </a>- Leading DEX on Polygon. <a href=\"https://quickswap-quickswap.github.io/\" class=\"text-primary\">QuickSwap</a> is a next-gen #DEX for #DeFi. Trade at lightning-fast speeds with near-zero gas fees.</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Decentralized Finance (DeFi) has emerged as a revolutionary force in the financial landscape, redefining traditional notions of banking and trading. QuickSwap, a decentralized exchange (DEX) built on the Polygon blockchain, stands as a prime example of the innovation and efficiency characterizing the DeFi space. In this article, we embark on a comprehensive journey to unravel the intricacies of QuickSwap, exploring its origins, functionalities, and the broader impact it has on the evolving DeFi ecosystem.\n<br>\n<br>I. The Genesis of QuickSwap:\n<br>\n<br>A. Evolution of Decentralized Exchanges:\n<br>\n<br>The rise of decentralized exchanges as a cornerstone of DeFi.\n<br>Challenges faced by centralized exchanges and the need for decentralized alternatives.\n<br>B. Introduction to Polygon:\n<br>\n<br>An overview of Polygon's role as a layer 2 scaling solution for Ethereum.\n<br>How Polygon addresses the scalability issues inherent in the Ethereum network.\n<br>C. QuickSwap's Inception:\n<br>\n<br>The founding principles and vision behind QuickSwap.\n<br>Development milestones and key figures involved in the creation of QuickSwap.\n<br>II. Understanding QuickSwap's Architecture:\n<br>\n<br>A. Liquidity Pools and Automated Market Makers (AMMs):\n<br>\n<br>The role of liquidity pools in decentralized exchanges.\n<br>How AMMs, particularly the Automated Market Maker model, contribute to QuickSwap's functionality.\n<br>B. Yield Farming and Staking on QuickSwap:\n<br>\n<br>Explanation of yield farming and its relevance on QuickSwap.\n<br>Staking mechanisms and their impact on liquidity provision.\n<br>C. Governance and Tokenomics:\n<br>\n<br>The governance model adopted by QuickSwap.\n<br>Overview of the QUICK token and its utility within the QuickSwap ecosystem.\n<br>III. QuickSwap's Impact on DeFi:\n<br>\n<br>A. Advantages of Using QuickSwap:\n<br>\n<br>Low transaction fees and high-speed transactions.\n<br>Accessibility and inclusivity in DeFi participation.\n<br>B. Community Engagement and Partnerships:\n<br>\n<br>The role of the QuickSwap community in shaping the platform's development.\n<br>Partnerships with other DeFi projects and collaborations within the broader crypto ecosystem.\n<br>IV. Challenges and Risks:\n<br>\n<br>A. Impermanent Loss and Risk Mitigation:\n<br>\n<br>Exploring the concept of impermanent loss in liquidity provision.\n<br>Strategies and tools available for mitigating risks associated with impermanent loss.\n<br>B. Regulatory Considerations:\n<br>\n<br>The evolving regulatory landscape for decentralized exchanges.\n<br>How QuickSwap navigates regulatory challenges and compliance.\n<br>V. Future Prospects and Innovations:\n<br>\n<br>A. Layer 2 Solutions and Scaling:\n<br>\n<br>The role of QuickSwap in contributing to the scalability of the broader DeFi ecosystem.\n<br>Exploration of future upgrades and enhancements to QuickSwap's architecture.\n<br>B. Integration with NFTs and Emerging Trends:\n<br>\n<br>The intersection of decentralized exchanges and Non-Fungible Tokens (NFTs).\n<br>QuickSwap's position in the evolving landscape of emerging DeFi trends.\n<br>Conclusion:\n<br>\n<br>QuickSwap's ascent within the DeFi realm signifies not only the platform's technical prowess but also its community-driven ethos. As we navigate the complexities of QuickSwap's architecture, it becomes evident that decentralized exchanges like QuickSwap are at the forefront of reshaping finance. With scalability, accessibility, and innovation as its guiding principles, QuickSwap stands as a beacon of progress within the ever-expanding universe of decentralized finance.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "u2b5dUka4F",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
